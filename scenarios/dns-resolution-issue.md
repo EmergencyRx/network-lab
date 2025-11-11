@@ -1,13 +1,13 @@
 # Scenario: DNS Resolution Issue
 
-Setup:
-- Client obtains IP configuration from router.
-- Router forwards DNS to upstream resolver.
+Baseline:
+- Client receives IP via DHCP.
+- DNS should work via router.
 
 Fault:
-- Router DNS forwarding misconfigured or blocked.
+- DNS server misconfigured or unreachable.
 
 Tasks:
-- Verify IP configuration on client.
-- Use ping and dig/nslookup to isolate DNS vs connectivity.
-- Correct DNS settings on router and confirm recovery.
+- Inspect IP and DNS settings on client.
+- Test ping by IP and hostname.
+- Identify and correct DNS config on router or upstream.

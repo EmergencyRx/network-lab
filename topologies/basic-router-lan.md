@@ -1,11 +1,18 @@
 # Basic Router and LAN Topology
 
-Nodes:
-- router: 192.168.10.1/24
-- server: 192.168.10.10/24 (static)
-- client: DHCP from router
+Router:
+- 192.168.10.1/24
+- DHCP: 192.168.10.50-192.168.10.200
+- DNS: router or upstream
 
-Objectives:
-- Configure router to provide DHCP and DNS.
-- Verify client receives lease and can reach server.
-- Capture traffic to understand ARP, DHCP, DNS, and basic routing.
+Server:
+- 192.168.10.10/24 static
+- HTTP on port 80
+
+Client:
+- DHCP from router
+
+Exercises:
+- Verify addressing and gateway.
+- Validate DNS resolution.
+- Trace route from client to server.
