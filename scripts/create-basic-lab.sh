@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-echo "This script is a placeholder for creating a basic lab using VMs or containers."
-echo "Document exact commands or automation for your environment here."
+echo "This is a documentation stub."
+echo "Implement VM or container creation here for your environment (libvirt, VirtualBox, Docker, etc.)."
