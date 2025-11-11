@@ -1,13 +1,13 @@
 # Scenario: DNS Resolution Issue
 
-Baseline:
-- Client receives IP via DHCP.
-- DNS should work via router.
+Starting point:
+- Client has IP, gateway, and DNS set via DHCP.
 
 Fault:
 - DNS server misconfigured or unreachable.
 
 Tasks:
-- Inspect IP and DNS settings on client.
-- Test ping by IP and hostname.
-- Identify and correct DNS config on router or upstream.
+- Verify IP details on client.
+- Test connectivity to gateway and server.
+- Compare results of ping by IP vs ping by name.
+- Identify and correct DNS configuration on router or server.

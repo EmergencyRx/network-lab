@@ -1,13 +1,13 @@
 # Basic Router and LAN Topology
 
 Router:
-- 192.168.10.1/24
+- LAN: 192.168.10.1/24
 - DHCP: 192.168.10.50-192.168.10.200
-- DNS: router or upstream
+- DNS: router or upstream resolver
 
 Server:
 - 192.168.10.10/24 static
-- HTTP on port 80
+- HTTP service on port 80
 
 Client:
 - DHCP from router
